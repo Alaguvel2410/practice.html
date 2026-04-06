@@ -1,2 +1,3 @@
 # practice.html
-learn one new idea at one time
+“Practice > Talent.”
+“Daily code = Daily growth.”
