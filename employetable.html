@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #000000;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Alaguvel</td><td>Development</td><td>35000</td><td>Chennai</td></tr>
+            <tr><td>Rahul</td><td>Testing</td><td>28000</td><td>Bangalore</td></tr>
+            <tr><td>Priya</td><td>Design</td><td>32000</td><td>Mumbai</td></tr>
+            <tr><td>Karthik</td><td>Development</td><td>40000</td><td>Chennai</td></tr>
+            <tr><td>Sara</td><td>HR</td><td>25000</td><td>Delhi</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
