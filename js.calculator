@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        .overall{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background-color: aqua;
+            border-radius: 50px;
+            width: 500px;
+            margin: 50px auto;
+            }
+        .title{ margin-bottom: 50px;
+            }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+        button{
+            padding: 10px;
+            margin: 20px;
+            border-radius: 15px;
+        }
+        input{
+            text-align: center;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<section class="overall">
+    <header class="title">
+    <h3>CALCULATOR</h3> 
+    </header>
+    <input type="number" id="n1" placeholder="enter no 1">
+    <input type="number" id="n2" placeholder="enter no 2">
+    <div class="buttons">
+    <button onclick="add()" >add</button>
+    <button onclick="mul()" >mul</button>
+    <button onclick="sub()" >sub</button>
+    <button onclick="div()" >div</button>
+    <button onclick="mod()" >mod</button>
+    <h3 id="result"></h3>
+    </div>
+</section>
+<script>
+function add(){
+var fnm=document.getElementById('n1').value;
+let snm=document.getElementById('n2').value;
+let fnum = Number(fnm);
+let snum=Number(snm);
+let sum=fnum + snum;
+document.getElementById('result').innerText = 'Addition: ' + sum;}
+
+function mul(){
+var fnm=document.getElementById('n1').value;
+let snm=document.getElementById('n2').value;
+let fnum = Number(fnm);
+let snum=Number(snm);
+let sum=fnum * snum;
+document.getElementById('result').innerText = 'multiply: ' + sum;}
+
+function sub(){
+var fnm=document.getElementById('n1').value;
+let snm=document.getElementById('n2').value;
+let fnum = Number(fnm);
+let snum=Number(snm);
+let sum=fnum - snum;
+document.getElementById('result').innerText = 'subraction : ' + sum;}
+
+function div(){
+var fnm=document.getElementById('n1').value;
+let snm=document.getElementById('n2').value;
+let fnum = Number(fnm);
+let snum=Number(snm);
+let sum=fnum / snum;
+document.getElementById('result').innerText = 'division: ' + sum;}
+
+function mod(){
+var fnm=document.getElementById('n1').value;
+let snm=document.getElementById('n2').value;
+let fnum = Number(fnm);
+let snum=Number(snm);
+let sum=fnum % snum;
+document.getElementById('result').innerText = 'mod: ' + sum;}
+</script>
+</body>
+</html>
